@@ -23,6 +23,7 @@ public class MyArrayList<Anytype> implements Iterable<Anytype> {
 			theItems[i]=old[i];
 		}
 	}
+	
 	public int size(){
 		return theSize;
 	}
