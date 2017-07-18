@@ -4,7 +4,7 @@ public class Solution {
 	public static void main(String[] args) {
 		Solution s=new Solution();
 		StringBuffer b=new StringBuffer();
-		b.append("we are happy ");
+		b.append(" happy ");
 		System.out.println(s.replaceSpace(b));
 	}
 	public String replaceSpace(StringBuffer str){
@@ -18,7 +18,7 @@ public class Solution {
 		int newlenth=str.length()+spacenum*2;
 		int newindex=newlenth-1;
 		str.setLength(newlenth);
-		for (; oldindex>0&&oldindex<newindex; --oldindex) {
+		for (; oldindex>=0&&oldindex<newindex; oldindex--) {
 			if (str.charAt(oldindex)==' ') {
 				str.setCharAt(newindex--, '0');
 				str.setCharAt(newindex--, '2');
